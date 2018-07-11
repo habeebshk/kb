@@ -1,0 +1,11 @@
+apiVersion: V1
+Kind: pod
+metadata:
+  name: analytics
+  spec:
+   containers:
+     -name: my-app
+	 image: nginx
+	ports:
+	-containerPort: 80
+	-containerPort: 443
